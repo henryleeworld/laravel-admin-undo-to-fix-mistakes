@@ -29,5 +29,5 @@ $ php artisan migrate --seed
 ![](https://i.imgur.com/j0SOe1R.png)
 > 確認刪除後提供可還原的連結
 
-![](https://i.imgur.com/IkuRKcU.png)
+![](https://i.imgur.com/Ww8bwBW.png)
 > 點選還原則可恢復資料
