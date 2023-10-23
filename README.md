@@ -1,4 +1,4 @@
-# Laravel 8 後臺管理取消來修正錯誤
+# Laravel 10 後臺管理取消來修正錯誤
 
 在後臺刪除資料後，您還可以還原資料，可以藉由軟刪除一筆模型資料後，資料並不是真的從資料庫被移除來實現，要把被軟刪除的模型資料恢復，使用 `restore` 方法。
 
@@ -20,14 +20,22 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以登入經由 `/login` 來進行登入，預設的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/j0SOe1R.png)
+![](https://i.imgur.com/X9swuIM.png)
 > 確認刪除後提供可還原的連結
 
-![](https://i.imgur.com/Ww8bwBW.png)
+![](https://i.imgur.com/5X5BFUc.png)
 > 點選還原則可恢復資料

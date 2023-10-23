@@ -4,12 +4,12 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Create1555355612601PermissionsTable extends Migration
+return new class extends Migration
 {
     public function up()
     {
         Schema::create('permissions', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('title')->nullable();
             $table->timestamps();
             $table->softDeletes();
@@ -20,4 +20,4 @@ class Create1555355612601PermissionsTable extends Migration
     {
         Schema::dropIfExists('permissions');
     }
-}
+};
